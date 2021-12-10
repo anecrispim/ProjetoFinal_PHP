@@ -80,7 +80,7 @@
         ?>
         <form method="post" action="funcoes.php">
             <fieldset>
-                <legend>Cadastro de Empréstimo</legend>
+                <legend><?=$acao == 'alterar' ? 'Alteração' : 'Cadastro'?> de Empréstimo</legend>
                 <input type="hidden" class="form-control" name="codigo" value="<?=isset($dados) ? $dados['ID'] : ''?>">
                 <input type="hidden" class="form-control" name="exemplarAnt" value="<?=isset($dados) ? $dados['EXE_ID'] : ''?>">
                 

@@ -25,7 +25,7 @@
     <div class="container">
         <form method="post" action="funcoes.php">
             <fieldset>
-                <legend>Cadastro de Livros</legend>
+                <legend><?=$acao == 'alterar' ? 'Alteração' : 'Cadastro'?> de Livros</legend>
                 <input type="hidden" class="form-control" name="codigo" value="<?=isset($dados) ? $dados['ID'] : ''?>">
                 <div class="mb-3">
                     <label for="titulo" class="form-label">Título</label>
